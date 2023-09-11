@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Encuesta</title>
+  <link rel="stylesheet" href="./styles/estilos.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Formulario De freeCodeCamp</h1>
+      <p id="description" class="description text-center">
+        Es un reto realizar esta actividad pero lo estoy intentando y puedo
+        ver que mi habilidad va mejorando.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nombre</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su Email" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Edad<span class="clue">(opcional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad" />
+      </div>
+      <div class="form-group">
+        <p>¿Cual es el rol que te describe mas actualmente?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecciona tu rol actual</option>
+          <option value="student">Estudiante</option>
+          <option value="job">Trabajo</option>
+          <option value="learner">Profesor</option>
+          <option value="preferNo">Escritor</option>
+          <option value="other">otro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Quieres aprender en freeCodeCamp?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+            checked />Definitivamente</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Creo que sí</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />No</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Cuál es la razón de elegir freeCodeCamp?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Seleciona una opción</option>
+          <option value="challenges">Desafios</option>
+          <option value="projects">Contenidos</option>
+          <option value="community">Gratis</option>
+          <option value="openSource">Varios Cursos</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Que le gustaria que mejoraramos?
+          <span class="clue">(Seleccione todas las que usted crea)</span>
+        </p>
+
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Proyectos
+          Front-end
+        </label>
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Proyectos
+          Back-end</label>
+        <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Manejo de
+          datos</label>
+        <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Proyectos
+          desafiantes</label>
+        <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Mas
+          ejercicios Css</label>
+        <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Mayor
+          ayuda</label>
+        <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Mejorar los Videos</label>
+        <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />Mas lenguajes</label>
+        <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />información</label>
+        <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Foros</label>
+        <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Más Cursos y
+          Certificados</label>
+      </div>
+
+      <div class="form-group">
+        <p>Comentarios o Sugerencias?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Ingrese su comentario aquí..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

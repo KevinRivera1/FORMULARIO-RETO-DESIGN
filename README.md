@@ -13,6 +13,7 @@ Este repositorio contiene un formulario de encuesta HTML diseñado para recopila
   - [Características Destacadas](#características-destacadas)
   - [Contenido Principal](#contenido-principal)
   - [Instrucciones de Uso](#instrucciones-de-uso)
+  - [Vista previa](#vista-previa)
   - [Contribución](#contribución)
 
 ## Características Destacadas
@@ -42,6 +43,11 @@ Para utilizar este archivo HTML en tu proyecto:
 3. Personaliza el contenido, los enlaces y la lógica del formulario según las necesidades específicas de tu proyecto.
 
 4. Asegúrate de proporcionar una página de destino adecuada en el atributo `action` del formulario (`<form action="index.html">`) para procesar los datos del formulario correctamente.
+
+
+## Vista previa
+
+Puedes ver una demostración en vivo de este archivo HTML en el siguiente enlace: [Demo](https://kevinrivera1.github.io/FORMULARIO-RETO-DESIGN/)
 
 ## Contribución
 
